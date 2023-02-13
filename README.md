@@ -1,25 +1,10 @@
-# OpenVulns
-
-## Overview
-
-This is your new Kedro project, which was generated using `Kedro 0.18.4`.
-
-Take a look at the [Kedro documentation](https://kedro.readthedocs.io) to get started.
-
-## Rules and guidelines
-
-In order to get the best out of the template:
-
-* Don't remove any lines from the `.gitignore` file we provide
-* Make sure your results can be reproduced by following a [data engineering convention](https://kedro.readthedocs.io/en/stable/faq/faq.html#what-is-data-engineering-convention)
-* Don't commit data to your repository
-* Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
+# On-Chain Vulnerability Detection
 
 ## Pre-requisities:
 1. Create a conda environment using `conda env create -n name python=3.9 && conda activate name
 2Copy the required repos to a `data/01_raw` folder and update parameters.yml
 
-## How to install dependencies
+## Install dependencies
 
 To install, run:
 
@@ -28,7 +13,7 @@ pip install -r src/requirements.txt
 
 ```
 
-## How to run your Kedro pipeline
+## Run pipeline
 
 You can run your Kedro project with:
 
@@ -47,7 +32,7 @@ kedro run -n get_sanctuary_functions
 kedro run -n train_model -n evaluate_model
 ```
 
-## How to test your Kedro project
+## Test project
 
 Have a look at the file `src/tests/test_run.py` for instructions on how to write your tests. You can run your tests as follows:
 
