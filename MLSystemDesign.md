@@ -9,11 +9,19 @@ ML system design for vulnerability detection in smart contracts.
 4. Consumers
 5. Observability
 
-Add images to readme
 To build a production ready ML system, we follow this idea of layers. Data flow happens in layers. This makes it composable for engineers to build modular pipelines of data and plug in as needed. This ML system will continuously ingests data, processes, transforms, and trains models. We use a library called kedro for building data pipelines, it includes a starter pack that follows software engineering as well as data flow best  practices. Kedro is used to compose modular pipelines that can be executed one of basis as needed or as a part of a pipeline.
+
+## Systems Architecture
+
+Vulnerability Detection Architecture
+![openzeppelin_vuln_detection_v1.jpg](docs%2Fimages%2Fopenzeppelin_vuln_detection_v1.jpg)
+
+Long Term ML Systems Architecture
+![openzeppelin_v2.jpg](docs%2Fimages%2Fopenzeppelin_v2.jpg)
 
 For the purposes of the current problem, we will build a kedro pipeline that follows this flow:
 
+## Steps:
 ```
 Data ingestion
   -> save to S3/storage layer

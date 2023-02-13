@@ -15,22 +15,36 @@ In order to get the best out of the template:
 * Don't commit data to your repository
 * Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
 
+## Pre-requisities:
+1. Create a conda environment using `conda env create -n name python=3.9 && conda activate name
+2Copy the required repos to a `data/01_raw` folder and update parameters.yml
+
 ## How to install dependencies
 
-Declare any dependencies in `src/requirements.txt` for `pip` installation and `src/environment.yml` for `conda` installation.
-
-To install them, run:
+To install, run:
 
 ```
 pip install -r src/requirements.txt
+
 ```
 
 ## How to run your Kedro pipeline
 
 You can run your Kedro project with:
 
+
 ```
+# runs all nodes of the pipeline
 kedro run
+
+# runs only the `get_vulnerable_functions` node
+kedro run -n get_vulnerable_functions
+
+# runs only the `get_sanctuary_functions` node
+kedro run -n get_sanctuary_functions
+
+# model training and evaluation
+kedro run -n train_model -n evaluate_model
 ```
 
 ## How to test your Kedro project
