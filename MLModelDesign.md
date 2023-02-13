@@ -55,6 +55,8 @@ Vectorizer:
 
 
 Models to try for clustering:
+here, we can use clustering to identify similar code blocks based on their characteristics, such as the number of lines of code, number of arithmetic operations, and the frequency of specific keywords. We can run this on the negative samples of the code that was extracted from sanctuary directory
+
 - KMeans
 - DBSCAN
 

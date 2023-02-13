@@ -41,6 +41,14 @@ Data ingestion
 ```
 We will then containerize this solution, kedro comes with a docker plugin. Using, kedro docker build and push, we can deploy this solution on an orchestrator in the cloud (aws batch/gcp cloud run jobs/etc.). 
 
+Install kedro docker plugin:
+
+1. `pip install kedro-docker`
+2. `kedro docker init`
+3. `kedro docker build`
+4. `kedro docker push`
+5. `kedro docker run`
+
 Schedule the docker run with specific commands to run once an hour or an agreed time range
 
 Monitor the ML system using an out of box tool, or open source Prometheus (metrics monitoring), Grafana (metrics visualizations), Loki (logging), and CircleCI (CI/CD).
