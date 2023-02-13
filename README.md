@@ -1,8 +1,9 @@
 # On-Chain Vulnerability Detection
 
 ## Pre-requisities:
-1. Create a conda environment using `conda env create -n name python=3.9 && conda activate name
-2Copy the required repos to a `data/01_raw` folder and update parameters.yml
+- python 3.9 and conda e.g.  `conda env create -n name python=3.9 && conda activate name`
+- kedro 0.18.4
+- clone repos to `data/01_raw` folder and update parameters.yml. (in production, we will use a storage bucket like S3)
 
 ## Install dependencies
 
