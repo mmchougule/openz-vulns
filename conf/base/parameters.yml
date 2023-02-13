@@ -1,0 +1,21 @@
+train_fraction: 0.8
+random_state: 3
+target_column: species
+sanctuary_dir: "/Users/mayurchougule/development/openz/smart-contract-sanctuary-ethereum/contracts/mainnet/"
+repo_url: "https://github.com/smartbugs/smartbugs-curated/blob/main/dataset"
+repo_dir: "/Users/mayurchougule/development/openz/smartbugs-curated/dataset/"
+function_cols: ['source',
+ 'function_index',
+ 'function_code',
+ 'vulnerability_label',
+ 'use_of_libraries',
+ 'use_of_design_patterns',
+ 'pragma_directives',
+ 'access_control',
+ 'num_arithmetic_ops']
+
+vulnerable_labels: ['BAD_RANDOMNESS', 'REENTRANCY', 'UNCHECKED_LL_CALLS',
+                       'OTHER - uninitialized storage', 'SHORT_ADDRESSES',
+                       'DENIAL_OF_SERVICE', 'FRONT_RUNNING', 'ACCESS_CONTROL',
+                       'ARITHMETIC', 'TIME_MANIPULATION', 'TIME MANIPULATION']
+accepted_accuracy: 0.7
